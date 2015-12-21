@@ -5,6 +5,7 @@ html {
 }
 
 header {
+    font-style: Courier;
 		text-align: center;
   		margin: 0 auto;
   		text-align: center;
@@ -34,6 +35,12 @@ nav { text-align: center;
 	  background-color: #43CFE8;
 }
 
+nav table {
+  font-style: Verdana;
+  border-color: #090C2D;
+  background-color: #B540E8;
+
+}
 
  
 header img { 
@@ -41,7 +48,31 @@ header img {
     height: 100px;
     border: 1px solid #73AD21;
     margin: 0px 50px 0px 50px;
+  }
 
+.main {
+        left: 20px
+        font-family: Arial;
+        font-size: 4em;
+}
+
+.blogs {
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 5%;
+  font-family: Arial;
+  text-align: center;
+  font-size: 3em;
+}
+footer img {
+  float: right;
+  display: inline-block;
+  width: 50px;
+    height: 50px;
+    border: 1px solid #73AD21;
+    margin: 0px 50px 0px 50px;
+}
 
     
 
