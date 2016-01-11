@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+  
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  <title>Blahg4</title>
+</head>
+
+<main>
+  <h1>Emmet's Suite Blahg Post#4</h1>
+  <h2>The subtitle, if you want it</h2>
+  <h4>2016.1.11</h4>
+
+  <section>
+    <p>
+       Hi guys!  Happy Monday!  Welcome to the wonderful world of ennumerables!
+
+    </p>
+    <p>
+        I've spent some time this week with .map and I'd like to review what i've learned and how i've implemented it this week.
+
+        I think of .map as almost "covering the whole map" the way for instance a group of kids might want to stop by EVERY house in their neighborhood during halloween so as to maximize their trick-or-treat candy and to not miss any house (or object) in the neighborhood.  In this way .map is similar to .each in that it addresses every value within an array.
+    </p>
+    <p>
+       I used .map earlier this week to assess whether any given element in an array was a number, or an integer, to which I could apply some simple addition.  Before I could go about adding anything to the various integers scattered throughout the array I had to identify which elements in the array were indeed integers as follows:
+    </p>
+    <p>
+       def my_array_modification_method!(source, thing_to_modify)
+          source.map {|i| i.is_a?(Integer) ? (i + thing_to_modify) : i} 
+        end
+    </p>
+
+    <p>
+        You can see here that .map allowed me to basically go to each element and ask if the element was an integer - just as a band of trick-or-treaters would go to each house and ask whether or not the home-dwellers would prefer to be tricked or offer up a treat (this example is waning in quality - my apologies... BOO!).
+    </p>
+
+     <p>
+        Just like many other non-boolean methods, the .map can be made destructive so as to permanently alter the contents of the array by adding the famous ! at the end of it as I've done below:
+    </p>
+
+      <p>
+       def my_array_modification_method!(source, thing_to_modify)
+          source.map! {|i| i.is_a?(Integer) ? (i + thing_to_modify) : i} 
+        end
+    </p>
+
+    <p> ^^^^ This would almost compare to a band of trick or treaters growing too old for dressing up for candy (for me it was 7th-8th grade) and deciding instead that they'd prefer to go out on CABBAGE NIGHT - as we called it in Vermont - during which young misfit youth would typically pull vegetables from farmers' gardens and throw them at the barn door (especially cabbage) - causing mayhem and one-way destruction of carved pumpkins, eggs (thrown onto houses) and any other form of destructive food-related mayhem.....   and with that my metaphoric analogy is no longer helpful or accurate - but you get the point.  Happy Monday !!
+    </p>
+
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+</main>
